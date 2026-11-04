@@ -1,0 +1,25 @@
+# AS Car Repair
+
+> Kfz-Werkstatt für Fahrzeuglackierung, Karosserieinstandsetzung und Unfallinstandsetzung in Ditzingen-Heimerdingen (Region Stuttgart). Inhaber: Ahmet Celik.
+
+## Leistungen
+
+- Fahrzeuglackierung: neue Farbe oder dezente Lackeffekte, ausgeführt in der eigenen Lackbox
+- Unfallschäden und Smart Repair: Karosserieschäden, Lackreparaturen, Rahmenrichtarbeiten, mechanische Reparaturen
+- Karosserieinstandsetzung und Aufbereitung: von kleinen Dellen und Kratzern bis zur umfassenden Reparatur nach einem Unfall
+- Felgenreparatur: Kratzer, Beulen, Risse, Verformungen
+- Oldtimer-Restauration
+
+## Kontakt
+
+- Adresse: Otto-Hahn-Straße 2, 71254 Ditzingen-Heimerdingen
+- Telefon: 07152 / 6150742
+- Mobil: 0152 59585819
+- E-Mail: as.car@gmx.de
+- Öffnungszeiten: Montag bis Freitag, 08:00 bis 17:00 Uhr
+
+## Seiten
+
+- [Startseite](https://gkstgt.github.io/as-car-repair/): Leistungen, Ablauf, Kontakt
+- [Impressum](https://gkstgt.github.io/as-car-repair/impressum.html): Anbieterangaben
+- [Datenschutz](https://gkstgt.github.io/as-car-repair/datenschutz.html): Datenschutzerklärung

@@ -1,0 +1,30 @@
+# Beispiel für eigenes Hosting (VPS). Auf GitHub Pages haben diese Dateien keine Wirkung.
+# Zertifikat: sudo certbot --nginx -d as-car-repair.de -d www.as-car-repair.de
+
+server {
+    listen 80;
+    server_name as-car-repair.de www.as-car-repair.de;
+    return 301 https://as-car-repair.de$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    http2 on;
+    server_name as-car-repair.de;
+    root /var/www/as-car-repair;
+    index index.html;
+
+    ssl_certificate     /etc/letsencrypt/live/as-car-repair.de/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/as-car-repair.de/privkey.pem;
+
+    # HSTS erst aktivieren, wenn HTTPS stabil läuft
+    # add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+    add_header Content-Security-Policy "default-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()" always;
+
+    location ^~ /config/ { return 404; }
+    location ~* \.(png|jpg|jpeg|ico|svg|woff2)$ { expires 30d; }
+    location ~* \.(css|js)$ { expires 7d; }
+}

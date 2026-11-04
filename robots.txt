@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gkstgt.github.io/as-car-repair/sitemap.xml
