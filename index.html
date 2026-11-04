@@ -29,6 +29,7 @@
 <meta name="twitter:image" content="https://gkstgt.github.io/as-car-repair/assets/og-image.png">
 <link rel="stylesheet" href="assets/site.css">
 <script src="assets/site.js"></script>
+
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -126,15 +127,15 @@
 
 <!-- Kopfzeile -->
 <header style="max-width:1200px;margin:0 auto;padding:20px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px">
-<a href="#oben" aria-label="AS Car Repair, Startseite" style="display:flex;align-items:center;gap:14px;flex:0 0 auto">
+<a href="index.html" aria-label="AS Car Repair, Startseite" style="display:flex;align-items:center;gap:14px;flex:0 0 auto">
 <img src="assets/logo-symbol.png" alt="" width="102" height="40" style="display:block;height:40px;width:auto">
 <span style="font-size:22px;font-weight:800;font-style:italic;letter-spacing:0.01em;color:var(--fg);white-space:nowrap">AS CAR REPAIR</span>
 </a>
 <nav aria-label="Hauptmenü" style="display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;color:var(--muted)">
-<a href="#leistungen">Leistungen</a>
-<a href="#ablauf">Ablauf</a>
-<a href="#ueber-uns">Über uns</a>
-<a href="#kontakt">Kontakt</a>
+<a href="leistungen.html">Leistungen</a>
+<a href="galerie.html">Galerie</a>
+<a href="ueber-uns.html">Über uns</a>
+<a href="kontakt.html">Kontakt</a>
 </nav>
 <div style="display:flex;align-items:center;gap:16px;flex:0 0 auto">
 <button type="button" role="switch" id="theme-toggle" aria-checked="true" aria-label="Dunkelmodus" style="position:relative;display:block;flex:0 0 auto;width:64px;height:34px;padding:0;border:1px solid var(--border);border-radius:17px;background:var(--track);cursor:pointer">
@@ -148,7 +149,6 @@
 </header>
 
 <main id="inhalt">
-<!-- Hero -->
 <section aria-labelledby="h-oben" id="oben" style="max-width:1200px;margin:0 auto;padding:48px 32px 56px;box-sizing:border-box">
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:40px 48px">
 <div style="flex:1 1 440px;min-width:0">
@@ -160,200 +160,22 @@
 </h1>
 <p style="margin:24px 0 0;max-width:46ch;font-size:19px;color:var(--muted)">Ihr Auto liegt Ihnen am Herzen, uns auch. Vom Kratzer bis zum Unfallschaden bringen wir es mit Sorgfalt wieder in Form. Schicken Sie uns ein Foto, wir melden uns persönlich bei Ihnen.</p>
 <div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:12px">
-<a href="#kontakt" style="display:inline-block;padding:15px 26px;border-radius:6px;background:var(--accent);color:#1a1208;font-weight:700;font-size:16px">Schaden melden</a></div>
+<a href="kontakt.html" style="display:inline-block;padding:15px 26px;border-radius:6px;background:var(--accent);color:#1a1208;font-weight:700;font-size:16px">Schaden melden</a><a href="leistungen.html" style="display:inline-block;padding:14px 26px;border:1px solid var(--border);border-radius:6px;font-weight:600;font-size:16px;color:var(--fg)">Unsere Leistungen</a></div>
 </div>
 </div>
 </section>
-
-<!-- Leistungen -->
-<section aria-labelledby="h-leistungen" id="leistungen" style="position:relative;overflow:hidden;border-top:1px solid var(--line)">
-<div aria-hidden="true" style="position:absolute;top:60px;left:-140px;width:440px;height:440px;border-radius:50%;background:rgba(240,146,43,0.30);filter:blur(90px);pointer-events:none"></div>
-<div aria-hidden="true" style="position:absolute;bottom:-80px;right:-120px;width:480px;height:480px;border-radius:50%;background:rgba(43,108,255,0.26);filter:blur(100px);pointer-events:none"></div>
-<div style="position:relative;max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box">
-<div style="font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--acctext)">Leistungen</div>
-<h2 id="h-leistungen" style="margin:12px 0 0;font-size:clamp(26px,3.2cqi,38px);line-height:1.15;font-weight:800;letter-spacing:-0.01em;text-wrap:balance">Was wir an Ihrem Fahrzeug machen</h2>
-<div class="svc-list" style="margin-top:40px">
-
-<div class="card svc" tabindex="0">
-<img class="shot" src="assets/leistung-lackierung.jpg" alt="Lackierer mit Spritzpistole an einer Stoßstange" width="560" height="420" loading="lazy">
-<div class="info">
-<h3>Fahrzeuglackierung</h3>
-<p>Ihr Auto soll wieder so aussehen, wie Sie es sich wünschen: in neuer Farbe, mit dezentem Effekt oder einfach makellos wie am ersten Tag. Wir lackieren in der eigenen Lackbox und nehmen uns die Zeit, die gute Arbeit braucht.</p>
-</div>
-<span class="plus" aria-hidden="true">+</span>
-</div>
-
-<div class="card svc" tabindex="0">
-<img class="shot" src="assets/leistung-unfall.jpg" alt="Fahrzeug nach einem Auffahrunfall" width="560" height="420" loading="lazy">
-<div class="info">
-<h3>Unfallschäden und Smart Repair</h3>
-<p>Ein Unfall ist ärgerlich genug. Wir kümmern uns um Karosserie, Lack, Rahmen und Mechanik, damit Sie sich um nichts weiter sorgen müssen und Ihr Auto wieder fährt wie vorher.</p>
-</div>
-<span class="plus" aria-hidden="true">+</span>
-</div>
-
-<div class="card svc" tabindex="0">
-<img class="shot" src="assets/leistung-karosserie.jpg" alt="Hand im Arbeitshandschuh an einem abgeklebten Kotflügel" width="560" height="420" loading="lazy">
-<div class="info">
-<h3>Karosserieinstandsetzung und Aufbereitung</h3>
-<p>Die Delle vom Parkplatz, der Kratzer in der Tür oder ein größerer Schaden: Wir bringen Ihr Fahrzeug wieder in Form und bereiten es so auf, dass Sie gern wieder einsteigen.</p>
-</div>
-<span class="plus" aria-hidden="true">+</span>
-</div>
-
-<div class="card svc" tabindex="0">
-<img class="shot" src="assets/leistung-felgen.jpg" alt="Rad mit Alufelge in einer Werkstatt" width="560" height="420" loading="lazy">
-<div class="info">
-<h3>Felgenreparatur</h3>
-<p>Eine beschädigte Felge muss nicht gleich ersetzt werden. Wir beseitigen Kratzer, Beulen, Risse und Verformungen, damit Ihr Auto wieder rund läuft und gut aussieht.</p>
-</div>
-<span class="plus" aria-hidden="true">+</span>
-</div>
-
-<div class="card svc" tabindex="0">
-<img class="shot" src="assets/leistung-oldtimer.jpg" alt="Chromscheinwerfer eines Oldtimers" width="560" height="420" loading="lazy">
-<div class="info">
-<h3>Oldtimer-Restauration</h3>
-<p>Ein Oldtimer ist mehr als ein Auto, er ist Geschichte und Herzensache. Wir behandeln ihn mit Sorgfalt und erhalten seine Schönheit und seinen eigenen Charakter.</p>
-</div>
-<span class="plus" aria-hidden="true">+</span>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- Vorher und Nachher -->
-<section aria-labelledby="h-arbeitsproben" id="arbeitsproben" style="border-top:1px solid var(--line);background:var(--bg2)">
-<div style="max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box">
-<div style="font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--acctext)">Arbeitsproben</div>
-<h2 id="h-arbeitsproben" style="margin:12px 0 0;font-size:clamp(26px,3.2cqi,38px);line-height:1.15;font-weight:800;letter-spacing:-0.01em;text-wrap:balance">Vorher und nachher</h2>
-<div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:20px">
-<figure style="margin:0;flex:1 1 340px;min-width:0">
-<div style="position:relative;aspect-ratio:4/3;max-width:100%;border:1px dashed var(--border);border-radius:6px;background:repeating-linear-gradient(135deg,var(--hatch1) 0 14px,var(--hatch2) 14px 28px);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box;color:var(--muted);font-size:15px">[Foto vom Schaden einfügen]</div>
-<figcaption style="margin-top:10px;font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)">Vorher</figcaption>
-</figure>
-<figure style="margin:0;flex:1 1 340px;min-width:0">
-<div style="position:relative;aspect-ratio:4/3;max-width:100%;border:1px dashed var(--border);border-radius:6px;background:repeating-linear-gradient(135deg,var(--hatch1) 0 14px,var(--hatch2) 14px 28px);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box;color:var(--muted);font-size:15px">[Foto nach der Reparatur einfügen]</div>
-<figcaption style="margin-top:10px;font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--acctext)">Nachher</figcaption>
-</figure>
-</div>
-<p style="margin:20px 0 0;color:var(--muted);font-size:15px">[Fahrzeug, Schaden und Arbeitsumfang kurz eintragen]</p>
-</div>
-</section>
-
-<!-- Ablauf -->
-<section aria-labelledby="h-ablauf" id="ablauf" style="border-top:1px solid var(--line)">
-<div style="max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box">
-<div style="font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--acctext)">Ablauf</div>
-<h2 id="h-ablauf" style="margin:12px 0 0;font-size:clamp(26px,3.2cqi,38px);line-height:1.15;font-weight:800;letter-spacing:-0.01em;text-wrap:balance">So läuft eine Reparatur ab</h2>
-<div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px 28px">
-<div style="min-width:0">
-<div style="font-size:44px;font-weight:800;line-height:1;color:var(--acctext);font-variant-numeric:tabular-nums">1</div>
-<h3 style="margin:14px 0 0;font-size:19px;font-weight:700">Schaden melden</h3>
-<p style="margin:8px 0 0;color:var(--muted)">Per Anruf oder per E-Mail mit Foto.</p>
-</div>
-<div style="min-width:0">
-<div style="font-size:44px;font-weight:800;line-height:1;color:var(--acctext);font-variant-numeric:tabular-nums">2</div>
-<h3 style="margin:14px 0 0;font-size:19px;font-weight:700">Einschätzung</h3>
-<p style="margin:8px 0 0;color:var(--muted)">Wir prüfen den Schaden und besprechen den Aufwand mit Ihnen.</p>
-</div>
-<div style="min-width:0">
-<div style="font-size:44px;font-weight:800;line-height:1;color:var(--acctext);font-variant-numeric:tabular-nums">3</div>
-<h3 style="margin:14px 0 0;font-size:19px;font-weight:700">Instandsetzung</h3>
-<p style="margin:8px 0 0;color:var(--muted)">Karosseriearbeit, Lackierung in der Lackbox, Aufbereitung.</p>
-</div>
-<div style="min-width:0">
-<div style="font-size:44px;font-weight:800;line-height:1;color:var(--acctext);font-variant-numeric:tabular-nums">4</div>
-<h3 style="margin:14px 0 0;font-size:19px;font-weight:700">Übergabe</h3>
-<p style="margin:8px 0 0;color:var(--muted)">Sie holen Ihr Fahrzeug in der Otto-Hahn-Straße ab.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Bewertungen -->
+<section aria-label="Leistungen im Überblick" style="border-top:1px solid var(--line)"><div style="max-width:1200px;margin:0 auto;padding:28px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:10px"><a class="chip" href="leistungen.html#fahrzeuglackierung">Fahrzeuglackierung</a><a class="chip" href="leistungen.html#unfallschaeden">Unfallschäden und Smart Repair</a><a class="chip" href="leistungen.html#karosserie">Karosserie und Aufbereitung</a><a class="chip" href="leistungen.html#felgen">Felgenreparatur</a><a class="chip" href="leistungen.html#oldtimer">Oldtimer-Restauration</a></div></section>
 <section aria-labelledby="h-bewertungen" id="bewertungen" style="border-top:1px solid var(--line);background:var(--bg2)">
 <div style="max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box">
 <div style="font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--acctext)">Bewertungen</div>
 <h2 id="h-bewertungen" style="margin:12px 0 0;font-size:clamp(26px,3.2cqi,38px);line-height:1.15;font-weight:800;letter-spacing:-0.01em;text-wrap:balance">Das sagen unsere Kunden</h2>
 <div style="margin-top:36px;padding:36px 32px;border:1px dashed var(--border);border-radius:6px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 32px">
 <p style="margin:0;flex:1 1 380px;min-width:0;color:var(--muted);max-width:60ch">[Google-Bewertungen hier einbinden: Sterne-Durchschnitt, Anzahl und die letzten Rezensionen als Text mit Namen und Datum.]</p>
-<a href="#kontakt" style="flex:0 0 auto;display:inline-block;padding:13px 22px;border:1px solid var(--border);border-radius:6px;font-weight:600;color:var(--fg)">Auf Google bewerten</a>
+<a href="kontakt.html" style="flex:0 0 auto;display:inline-block;padding:13px 22px;border:1px solid var(--border);border-radius:6px;font-weight:600;color:var(--fg)">Auf Google bewerten</a>
 </div>
 </div>
 </section>
-
-<!-- Über uns -->
-<section aria-labelledby="h-ueber-uns" id="ueber-uns" style="border-top:1px solid var(--line)">
-<div style="max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:40px 56px;align-items:flex-start">
-<div style="flex:0 1 320px;min-width:0;width:100%">
-<img src="assets/inhaber.jpg" alt="Ahmet Celik, Inhaber von AS Car Repair, am Schreibtisch in der Werkstatt" width="541" height="632" loading="lazy" style="display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 4%,#000 80%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 9%,#000 91%,transparent),linear-gradient(to bottom,transparent,#000 4%,#000 80%,transparent);mask-composite:intersect">
-</div>
-<div style="flex:1 1 400px;min-width:0">
-<div style="font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--acctext)">Über uns</div>
-<h2 id="h-ueber-uns" style="margin:12px 0 0;font-size:clamp(26px,3.2cqi,38px);line-height:1.15;font-weight:800;letter-spacing:-0.01em;text-wrap:balance">Ahmet Celik, Inhaber</h2>
-<p style="margin:20px 0 0;max-width:56ch;font-size:18px;color:var(--fg2)">Bei AS Car Repair sind Sie kein Auftrag unter vielen. Ich kümmere mich in Heimerdingen persönlich um Lackierung und Karosserie, und jedes Fahrzeug verlässt die Werkstatt erst, wenn ich selbst damit zufrieden bin.</p>
-<p style="margin:16px 0 0;max-width:56ch;color:var(--muted)">[Qualifikation, Gründungsjahr, Lackmarken, Team und Ausstattung der Werkstatt eintragen]</p>
-</div>
-</div>
-</section>
-
-<!-- Kontakt -->
-<section aria-labelledby="h-kontakt" id="kontakt" style="border-top:1px solid var(--line);background:var(--bg2)">
-<div style="max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:48px 56px;align-items:flex-start">
-<div style="flex:1 1 360px;min-width:0">
-<div style="font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--acctext)">Kontakt</div>
-<h2 id="h-kontakt" style="margin:12px 0 0;font-size:clamp(26px,3.2cqi,38px);line-height:1.15;font-weight:800;letter-spacing:-0.01em;text-wrap:balance">Schaden melden</h2>
-<div style="margin-top:32px;display:flex;flex-direction:column;gap:20px;font-size:17px">
-<div>
-<div style="font-size:13px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Telefon</div>
-<a href="tel:+4971526150742" style="font-weight:700;font-size:22px">07152 / 6150742</a>
-</div>
-<div>
-<div style="font-size:13px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Mobil</div>
-<a href="tel:+4915259585819" style="font-weight:600">0152 59585819</a>
-</div>
-<div>
-<div style="font-size:13px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">E-Mail</div>
-<a href="mailto:as.car@gmx.de" style="font-weight:600">as.car@gmx.de</a>
-</div>
-<div>
-<div style="font-size:13px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Werkstatt</div>
-<div style="font-weight:600">Otto-Hahn-Straße 2<br>71254 Ditzingen-Heimerdingen</div>
-<a href="https://www.openstreetmap.org/search?query=Otto-Hahn-Stra%C3%9Fe%202%2C%2071254%20Ditzingen" style="display:inline-block;margin-top:8px;color:var(--acctext);font-weight:600">Route in OpenStreetMap öffnen</a>
-</div>
-<div>
-<div style="font-size:13px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Öffnungszeiten</div>
-<div style="font-weight:600">Montag bis Freitag, 08:00 bis 17:00 Uhr</div>
-</div>
-</div>
-</div>
-
-<form id="anfrage" style="flex:1 1 400px;min-width:0;padding:32px;box-sizing:border-box;background:var(--surface);border:1px solid var(--line2);border-radius:8px;display:flex;flex-direction:column;gap:18px">
-<h3 style="margin:0;font-size:20px;font-weight:700">Anfrage per E-Mail</h3>
-<div style="display:flex;flex-direction:column;gap:6px">
-<label for="f-name" style="font-size:14px;color:var(--muted)">Name</label>
-<input id="f-name" type="text" required autocomplete="name" style="padding:13px 14px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit;font-size:16px;box-sizing:border-box;width:100%">
-</div>
-<div style="display:flex;flex-direction:column;gap:6px">
-<label for="f-tel" style="font-size:14px;color:var(--muted)">Telefon</label>
-<input id="f-tel" type="tel" autocomplete="tel" style="padding:13px 14px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit;font-size:16px;box-sizing:border-box;width:100%">
-</div>
-<div style="display:flex;flex-direction:column;gap:6px">
-<label for="f-kfz" style="font-size:14px;color:var(--muted)">Fahrzeug (Marke, Modell, Baujahr)</label>
-<input id="f-kfz" type="text" style="padding:13px 14px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit;font-size:16px;box-sizing:border-box;width:100%">
-</div>
-<div style="display:flex;flex-direction:column;gap:6px">
-<label for="f-text" style="font-size:14px;color:var(--muted)">Was ist passiert?</label>
-<textarea id="f-text" rows="4" required style="padding:13px 14px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--fg);font:inherit;font-size:16px;box-sizing:border-box;width:100%;resize:vertical"></textarea>
-</div>
-<button type="submit" style="padding:15px 26px;border:0;border-radius:6px;background:var(--accent);color:#1a1208;font:inherit;font-weight:700;font-size:16px;cursor:pointer">Anfrage senden</button>
-<p style="margin:0;font-size:13px;color:var(--muted)">Das Formular öffnet Ihr E-Mail-Programm mit einer vorbereiteten Nachricht und sendet selbst nichts. Fotos vom Schaden hängen Sie dort direkt an. Mehr in der <a href="datenschutz.html" style="text-decoration:underline">Datenschutzerklärung</a>.</p>
-</form>
-</div>
-</section>
-
+<section aria-labelledby="h-cta" style="border-top:1px solid var(--line)"><div style="max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 40px"><div style="flex:1 1 380px;min-width:0"><h2 id="h-cta" style="margin:0;font-size:clamp(26px,3.2cqi,38px);line-height:1.15;font-weight:800;letter-spacing:-0.01em;text-wrap:balance">Schaden am Auto?</h2><p style="margin:12px 0 0;color:var(--muted);max-width:52ch">Rufen Sie an oder schicken Sie uns ein Foto. Wir melden uns persönlich bei Ihnen.</p></div><div style="display:flex;flex-wrap:wrap;gap:12px"><a href="kontakt.html" style="display:inline-block;padding:15px 26px;border-radius:6px;background:var(--accent);color:#1a1208;font-weight:700;font-size:16px">Schaden melden</a><a href="tel:+4971526150742" style="display:inline-block;padding:14px 26px;border:1px solid var(--border);border-radius:6px;font-weight:600;font-size:16px;color:var(--fg)">07152 / 6150742</a></div></div></section>
 </main>
 
 <!-- Fußzeile -->

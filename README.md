@@ -6,7 +6,7 @@ Statische Webseite für AS Car Repair, Otto-Hahn-Straße 2, 71254 Ditzingen-Heim
 
 | Datei | Inhalt |
 |---|---|
-| `index.html` | Startseite (ein H1, H2/H3 verschachtelt, `main` und `section`) |
+| `index.html`, `leistungen.html`, `galerie.html`, `ueber-uns.html`, `kontakt.html` | Eigene Seiten, untereinander verlinkt (je ein H1) |
 | `impressum.html`, `datenschutz.html` | Rechtstexte als eigene Seiten |
 | `assets/site.css`, `assets/site.js` | Stil, Hell-/Dunkelmodus, Formular (öffnet das Mailprogramm) |
 | `assets/` | Logo-Symbol, Open-Graph-Bild (1200x630), Favicons |
@@ -15,7 +15,7 @@ Statische Webseite für AS Car Repair, Otto-Hahn-Straße 2, 71254 Ditzingen-Heim
 
 ## Vor dem Livegang
 
-1. **Indexierung freigeben:** In `index.html`, `impressum.html`, `datenschutz.html` steht `noindex, nofollow`. Auf `index, follow` stellen, wenn alle Platzhalter ersetzt sind.
+1. **Indexierung freigeben:** In allen HTML-Dateien steht `noindex, nofollow`. Auf `index, follow` stellen, wenn alle Platzhalter ersetzt sind.
 2. **Domain eintragen:** Alle absoluten URLs (Canonical, Open Graph, Schema.org, Sitemap, robots.txt, llms.txt) nutzen `https://gkstgt.github.io/as-car-repair`. Per Suchen und Ersetzen durch die Zieldomain tauschen, zum Beispiel `https://as-car-repair.de`. `robots.txt` und `sitemap.xml` werden von Suchmaschinen nur im Hauptverzeichnis einer Domain gelesen, unter einer Projekt-URL auf github.io wirken sie nicht.
 3. **Platzhalter in eckigen Klammern ersetzen:** Vorher/Nachher-Fotos, Qualifikation, Gründungsjahr, Google-Bewertungen, Rechtsform, Handwerkskammer, USt-ID im Impressum, Drittland-Angaben zum Hoster in der Datenschutzerklärung.
 4. **Rechtstexte prüfen lassen.** Beide Seiten sind Entwürfe.

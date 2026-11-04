@@ -20,6 +20,10 @@
 
 ## Seiten
 
-- [Startseite](https://gkstgt.github.io/as-car-repair/): Leistungen, Ablauf, Kontakt
+- [Startseite](https://gkstgt.github.io/as-car-repair/): Überblick, Bewertungen
+- [Leistungen](https://gkstgt.github.io/as-car-repair/leistungen.html): alle Leistungen und Ablauf einer Reparatur
+- [Galerie](https://gkstgt.github.io/as-car-repair/galerie.html): Fotos und Vorher-nachher
+- [Über uns](https://gkstgt.github.io/as-car-repair/ueber-uns.html): Inhaber Ahmet Celik
+- [Kontakt](https://gkstgt.github.io/as-car-repair/kontakt.html): Telefon, E-Mail, Adresse, Öffnungszeiten, Anfrageformular
 - [Impressum](https://gkstgt.github.io/as-car-repair/impressum.html): Anbieterangaben
 - [Datenschutz](https://gkstgt.github.io/as-car-repair/datenschutz.html): Datenschutzerklärung
