@@ -18,3 +18,5 @@ a:focus-visible,input:focus-visible,textarea:focus-visible,button:focus-visible{
 .legal ul{padding-left:22px}
 .legal a{color:var(--acctext);text-decoration:underline}
 .legal .note{padding:14px 16px;border:1px dashed var(--border);border-radius:6px;color:var(--muted);font-size:15px}
+
+.card{overflow:hidden}.card .shot{display:block;width:calc(100% + 56px);max-width:none;margin:-28px -28px 22px;aspect-ratio:4/3;object-fit:cover}
