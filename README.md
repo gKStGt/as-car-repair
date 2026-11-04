@@ -17,7 +17,7 @@ Statische Webseite für AS Car Repair, Otto-Hahn-Straße 2, 71254 Ditzingen-Heim
 
 1. **Indexierung freigeben:** In `index.html`, `impressum.html`, `datenschutz.html` steht `noindex, nofollow`. Auf `index, follow` stellen, wenn alle Platzhalter ersetzt sind.
 2. **Domain eintragen:** Alle absoluten URLs (Canonical, Open Graph, Schema.org, Sitemap, robots.txt, llms.txt) nutzen `https://gkstgt.github.io/as-car-repair`. Per Suchen und Ersetzen durch die Zieldomain tauschen, zum Beispiel `https://as-car-repair.de`. `robots.txt` und `sitemap.xml` werden von Suchmaschinen nur im Hauptverzeichnis einer Domain gelesen, unter einer Projekt-URL auf github.io wirken sie nicht.
-3. **Platzhalter in eckigen Klammern ersetzen:** Vorher/Nachher-Fotos, Foto des Inhabers, Qualifikation, Gründungsjahr, Google-Bewertungen, Rechtsform, Handwerkskammer, USt-ID im Impressum, Drittland-Angaben zum Hoster in der Datenschutzerklärung.
+3. **Platzhalter in eckigen Klammern ersetzen:** Vorher/Nachher-Fotos, Qualifikation, Gründungsjahr, Google-Bewertungen, Rechtsform, Handwerkskammer, USt-ID im Impressum, Drittland-Angaben zum Hoster in der Datenschutzerklärung.
 4. **Rechtstexte prüfen lassen.** Beide Seiten sind Entwürfe.
 
 ## Sicherheit
