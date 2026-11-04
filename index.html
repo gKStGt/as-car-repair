@@ -8,15 +8,17 @@
 <meta name="robots" content="noindex, nofollow">
 <style>
 :root{--accent:#f0922b;color-scheme:dark;
---bg:#0d0c11;--bg2:#100f15;--surface:#15141b;--hatch1:#1a1922;--hatch2:#15141b;--line:#23212b;--line2:#272530;--border:#3a3746;--fg:#eceef2;--fg2:#c4c8d1;--muted:#a3a8b4;--acctext:var(--accent);--hover:#ffffff;--track:#2a2833;--knobx:30px;--moon:1;--moonrot:0deg;--moonscale:1;--sun:0;--sunrot:-90deg;--sunscale:0.4}
+--bg:#0d0c11;--bg2:#100f15;--surface:#15141b;--hatch1:#1a1922;--hatch2:#15141b;--line:#23212b;--line2:#272530;--border:#3a3746;--fg:#eceef2;--fg2:#c4c8d1;--muted:#a3a8b4;--acctext:var(--accent);--hover:#ffffff;--track:#2a2833;--glass:rgba(255,255,255,.06);--glass-hover:rgba(255,255,255,.10);--glassborder:rgba(255,255,255,.22);--knobx:30px;--moon:1;--moonrot:0deg;--moonscale:1;--sun:0;--sunrot:-90deg;--sunscale:0.4}
 :root[data-theme="light"]{color-scheme:light;
---bg:#f4f5f7;--bg2:#eceef2;--surface:#ffffff;--hatch1:#e4e7ed;--hatch2:#edeff3;--line:#dcdfe6;--line2:#d3d7df;--border:#bfc4cf;--fg:#14151a;--fg2:#383c47;--muted:#565b67;--acctext:color-mix(in srgb,var(--accent) 62%,#000000);--hover:#000000;--track:#d3d7df;--knobx:0px;--moon:0;--moonrot:90deg;--moonscale:0.4;--sun:1;--sunrot:0deg;--sunscale:1}
+--bg:#f4f5f7;--bg2:#eceef2;--surface:#ffffff;--hatch1:#e4e7ed;--hatch2:#edeff3;--line:#dcdfe6;--line2:#d3d7df;--border:#bfc4cf;--fg:#14151a;--fg2:#383c47;--muted:#565b67;--acctext:color-mix(in srgb,var(--accent) 62%,#000000);--hover:#000000;--track:#d3d7df;--glass:rgba(255,255,255,.55);--glass-hover:rgba(255,255,255,.85);--glassborder:rgba(20,21,26,.16);--knobx:0px;--moon:0;--moonrot:90deg;--moonscale:0.4;--sun:1;--sunrot:0deg;--sunscale:1}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg)}
 a{color:inherit;text-decoration:none}
 a:hover{color:var(--hover)}
 a:focus-visible,input:focus-visible,textarea:focus-visible,button:focus-visible{outline:2px solid var(--acctext);outline-offset:2px}
 *{transition:background-color .45s ease,color .45s ease,border-color .45s ease}
+.card{border:2px solid var(--glassborder);border-radius:16px;background:var(--glass);-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5);transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s ease,box-shadow .35s ease,background-color .35s ease}
+.card:hover{transform:translateY(-6px);border-color:var(--acctext);background:var(--glass-hover);box-shadow:0 20px 44px -16px rgba(0,0,0,.45),0 0 36px -8px var(--acctext)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
 </style>
 </head>
@@ -64,35 +66,37 @@ a:focus-visible,input:focus-visible,textarea:focus-visible,button:focus-visible{
 </div>
 
 <!-- Leistungen -->
-<div id="leistungen" style="border-top:1px solid var(--line)">
-<div style="max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box">
+<div id="leistungen" style="position:relative;overflow:hidden;border-top:1px solid var(--line)">
+<div aria-hidden="true" style="position:absolute;top:60px;left:-140px;width:440px;height:440px;border-radius:50%;background:rgba(240,146,43,0.30);filter:blur(90px);pointer-events:none"></div>
+<div aria-hidden="true" style="position:absolute;bottom:-80px;right:-120px;width:480px;height:480px;border-radius:50%;background:rgba(43,108,255,0.26);filter:blur(100px);pointer-events:none"></div>
+<div style="position:relative;max-width:1200px;margin:0 auto;padding:72px 32px;box-sizing:border-box">
 <div style="font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--acctext)">Leistungen</div>
 <h2 style="margin:12px 0 0;font-size:clamp(26px,3.2cqi,38px);line-height:1.15;font-weight:800;letter-spacing:-0.01em;text-wrap:balance">Was wir an Ihrem Fahrzeug machen</h2>
-<div style="margin-top:40px;border-bottom:1px solid var(--line)">
+<div style="margin-top:40px;display:flex;flex-wrap:wrap;gap:20px">
 
-<div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 32px;padding:26px 0;border-top:1px solid var(--line)">
-<h3 style="margin:0;flex:0 1 340px;font-size:22px;font-weight:700">Fahrzeuglackierung</h3>
-<p style="margin:0;flex:1 1 300px;min-width:0;color:var(--muted)">Neue Farbe oder dezente Lackeffekte, ausgeführt in der eigenen Lackbox.</p>
+<div class="card" style="flex:1 1 320px;min-width:0;box-sizing:border-box;padding:28px;min-height:170px">
+<h3 style="margin:0;font-size:22px;font-weight:700">Fahrzeuglackierung</h3>
+<p style="margin:12px 0 0;color:var(--muted)">Neue Farbe oder dezente Lackeffekte, ausgeführt in der eigenen Lackbox.</p>
 </div>
 
-<div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 32px;padding:26px 0;border-top:1px solid var(--line)">
-<h3 style="margin:0;flex:0 1 340px;font-size:22px;font-weight:700">Unfallschäden und Smart Repair</h3>
-<p style="margin:0;flex:1 1 300px;min-width:0;color:var(--muted)">Karosserieschäden, Lackreparaturen, Rahmenrichtarbeiten und mechanische Reparaturen.</p>
+<div class="card" style="flex:1 1 320px;min-width:0;box-sizing:border-box;padding:28px;min-height:170px">
+<h3 style="margin:0;font-size:22px;font-weight:700">Unfallschäden und Smart Repair</h3>
+<p style="margin:12px 0 0;color:var(--muted)">Karosserieschäden, Lackreparaturen, Rahmenrichtarbeiten und mechanische Reparaturen.</p>
 </div>
 
-<div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 32px;padding:26px 0;border-top:1px solid var(--line)">
-<h3 style="margin:0;flex:0 1 340px;font-size:22px;font-weight:700">Karosserieinstandsetzung und Aufbereitung</h3>
-<p style="margin:0;flex:1 1 300px;min-width:0;color:var(--muted)">Von kleinen Dellen und Kratzern bis zur umfassenden Reparatur nach einem Unfall.</p>
+<div class="card" style="flex:1 1 320px;min-width:0;box-sizing:border-box;padding:28px;min-height:170px">
+<h3 style="margin:0;font-size:22px;font-weight:700">Karosserieinstandsetzung und Aufbereitung</h3>
+<p style="margin:12px 0 0;color:var(--muted)">Von kleinen Dellen und Kratzern bis zur umfassenden Reparatur nach einem Unfall.</p>
 </div>
 
-<div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 32px;padding:26px 0;border-top:1px solid var(--line)">
-<h3 style="margin:0;flex:0 1 340px;font-size:22px;font-weight:700">Felgenreparatur</h3>
-<p style="margin:0;flex:1 1 300px;min-width:0;color:var(--muted)">Kratzer, Beulen, Risse und Verformungen an Ihren Felgen.</p>
+<div class="card" style="flex:1 1 320px;min-width:0;box-sizing:border-box;padding:28px;min-height:170px">
+<h3 style="margin:0;font-size:22px;font-weight:700">Felgenreparatur</h3>
+<p style="margin:12px 0 0;color:var(--muted)">Kratzer, Beulen, Risse und Verformungen an Ihren Felgen.</p>
 </div>
 
-<div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 32px;padding:26px 0;border-top:1px solid var(--line)">
-<h3 style="margin:0;flex:0 1 340px;font-size:22px;font-weight:700">Oldtimer-Restauration</h3>
-<p style="margin:0;flex:1 1 300px;min-width:0;color:var(--muted)">Erhalt von Schönheit und Eigenart historischer Fahrzeuge.</p>
+<div class="card" style="flex:1 1 320px;min-width:0;box-sizing:border-box;padding:28px;min-height:170px">
+<h3 style="margin:0;font-size:22px;font-weight:700">Oldtimer-Restauration</h3>
+<p style="margin:12px 0 0;color:var(--muted)">Erhalt von Schönheit und Eigenart historischer Fahrzeuge.</p>
 </div>
 
 </div>
