@@ -94,15 +94,15 @@ body{padding-bottom:84px}
 .hero-actions .hero-primary:hover{background:#e65e00;border-color:#e65e00;color:#fff}
 .hero-actions .hero-secondary{background:color-mix(in srgb,var(--bg) 52%,transparent);color:inherit}
 .hero-actions .hero-secondary:hover{background:color-mix(in srgb,var(--bg) 80%,transparent);color:inherit}
-.hero .pickup-card{position:absolute;z-index:2;top:28px;right:clamp(24px,3.8vw,64px);width:320px;box-sizing:border-box;padding:17px 19px 16px;border:1px solid color-mix(in srgb,var(--accent) 36%,var(--border));border-radius:8px;background:rgba(10,10,10,.74);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 10px 26px rgba(0,0,0,.22)}
+.hero .pickup-card{position:absolute;z-index:2;top:28px;right:clamp(24px,3.8vw,64px);width:290px;box-sizing:border-box;padding:15px 17px 14px;border:1px solid color-mix(in srgb,var(--accent) 36%,var(--border));border-radius:8px;background:rgba(10,10,10,.74);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 10px 26px rgba(0,0,0,.22)}
 :root[data-theme="light"] .hero .pickup-card{background:rgba(255,255,255,.82);box-shadow:0 10px 26px rgba(0,0,0,.1)}
 .pickup-mark{display:flex;align-items:center;gap:10px;height:26px}
 .pickup-mark-arrow{display:flex;align-items:center;justify-content:center;width:20px;height:20px;transform:rotate(45deg);background:linear-gradient(135deg,#ffc58a,var(--accent) 55%,#d9620a);color:#1a1208;font-size:13px;font-weight:900}
 .pickup-mark-stripes{display:block;width:48px;height:5px;transform:skewX(-25deg);background:#ffb066;box-shadow:0 8px 0 var(--accent),0 16px 0 #ffb066}
 .pickup-eyebrow{margin-top:10px;color:var(--acctext);font-size:10px;font-style:italic;font-weight:800;letter-spacing:.14em}
-.pickup-card h2{margin:5px 0 8px;font-size:19px;font-style:italic;font-weight:850;letter-spacing:-.025em;line-height:1.1;text-transform:uppercase}
-.pickup-description{margin:0;color:var(--fg2);font-size:13px;line-height:1.4}
-.pickup-price{margin:11px 0 0;padding-top:8px;border-top:1px solid var(--border);color:var(--acctext);font-size:12px;font-weight:750;line-height:1.3}
+.pickup-card h2{margin:5px 0 8px;font-size:17px;font-style:italic;font-weight:850;letter-spacing:-.025em;line-height:1.1;text-transform:uppercase}
+.hero .pickup-description{margin:0;color:var(--fg2);font-size:12.5px;font-weight:500;line-height:1.4}
+.hero .pickup-price{margin:10px 0 0;padding-top:8px;border-top:1px solid var(--border);color:var(--acctext);font-size:11.5px;font-weight:750;line-height:1.3}
 @media (max-width:920px){.hero .pickup-card{position:relative;top:auto;right:auto;width:min(300px,calc(100% - 40px));margin:18px 20px 24px auto}}
 @media (max-width:700px){
 .hero{min-height:660px;background-size:auto 65%;background-repeat:no-repeat;background-position:55% bottom}
