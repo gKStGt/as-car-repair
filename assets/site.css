@@ -107,3 +107,9 @@ body{padding-bottom:84px}
 .pickup-section{padding:34px 20px 42px}
 }
 @media (max-width:380px){.hero{min-height:620px;background-size:auto 59%}.hero-actions a{font-size:14px;padding:8px 11px}}
+
+/* Unterseiten: leere Werkstatt mit 50 % Bildanteil vor dem jeweiligen Grundton. */
+body.interior-body{background-color:var(--bg);background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("workshop-dark.png");background-position:center center;background-size:cover;background-repeat:no-repeat;background-attachment:fixed}
+:root[data-theme="light"] body.interior-body{background-image:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)),url("workshop-light.png")}
+.interior-page{background:transparent!important}
+.interior-page #kontakt,.interior-page #arbeitsproben{background:transparent!important}
