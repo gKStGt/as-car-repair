@@ -94,8 +94,16 @@ body{padding-bottom:84px}
 .hero-actions .hero-primary:hover{background:#e65e00;border-color:#e65e00;color:#fff}
 .hero-actions .hero-secondary{background:color-mix(in srgb,var(--bg) 52%,transparent);color:inherit}
 .hero-actions .hero-secondary:hover{background:color-mix(in srgb,var(--bg) 80%,transparent);color:inherit}
-.pickup-section{display:flex;justify-content:center;padding:52px 24px 60px;background:var(--bg);border-top:1px solid var(--line)}
-.pickup-card{width:min(100%,440px)}
+.pickup-section{display:flex;align-items:center;min-height:520px;box-sizing:border-box;padding:72px clamp(32px,7vw,140px);background:transparent}
+.pickup-card{position:relative;width:min(100%,600px);box-sizing:border-box;padding:40px 44px 38px;border:1px solid color-mix(in srgb,var(--accent) 65%,var(--border));border-left:5px solid var(--accent);border-radius:14px;background:rgba(10,10,10,.84);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 30px 70px rgba(0,0,0,.48),0 0 42px color-mix(in srgb,var(--accent) 12%,transparent)}
+:root[data-theme="light"] .pickup-card{background:rgba(255,255,255,.88);box-shadow:0 30px 70px rgba(0,0,0,.16),0 0 42px color-mix(in srgb,var(--accent) 12%,transparent)}
+.pickup-mark{display:flex;align-items:center;gap:16px;height:48px}
+.pickup-mark-arrow{display:flex;align-items:center;justify-content:center;width:34px;height:34px;transform:rotate(45deg);background:linear-gradient(135deg,#ffc58a,var(--accent) 55%,#d9620a);color:#1a1208;font-size:20px;font-weight:900}
+.pickup-mark-stripes{display:block;width:78px;height:8px;transform:skewX(-25deg);background:#ffb066;box-shadow:0 13px 0 var(--accent),0 26px 0 #ffb066}
+.pickup-eyebrow{margin-top:18px;color:var(--acctext);font-size:12px;font-style:italic;font-weight:800;letter-spacing:.16em}
+.pickup-card h2{margin:10px 0 18px;font-size:clamp(30px,3vw,43px);font-style:italic;font-weight:900;letter-spacing:-.035em;line-height:1.05;text-transform:uppercase;text-wrap:balance}
+.pickup-description{margin:0;max-width:45ch;color:var(--fg2);font-size:18px;line-height:1.55}
+.pickup-price{margin:28px 0 0;padding-top:17px;border-top:1px solid var(--border);color:var(--acctext);font-size:15px;font-weight:800}
 @media (max-width:700px){
 .hero{min-height:660px;background-size:auto 65%;background-repeat:no-repeat;background-position:55% bottom}
 .hero::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(to bottom,var(--bg) 0%,var(--bg) 32%,color-mix(in srgb,var(--bg) 88%,transparent) 48%,transparent 69%)}
@@ -104,7 +112,10 @@ body{padding-bottom:84px}
 .hero p{font-size:18px;max-width:32ch}
 .hero-actions{gap:10px;margin-top:22px}
 .hero-actions a{min-height:46px;padding:9px 15px;font-size:15px;border-radius:8px}
-.pickup-section{padding:34px 20px 42px}
+.pickup-section{min-height:0;padding:48px 20px 54px}
+.pickup-card{padding:28px 27px 30px}
+.pickup-card h2{font-size:clamp(28px,7vw,36px)}
+.pickup-description{font-size:16px}
 }
 @media (max-width:380px){.hero{min-height:620px;background-size:auto 59%}.hero-actions a{font-size:14px;padding:8px 11px}}
 
@@ -113,3 +124,9 @@ body.interior-body{background-color:var(--bg);background-image:linear-gradient(r
 :root[data-theme="light"] body.interior-body{background-image:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)),url("workshop-light.png")}
 .interior-page{background:transparent!important}
 .interior-page #kontakt,.interior-page #arbeitsproben{background:transparent!important}
+
+/* Die Werkstattkulisse läuft auf der Startseite unter allen Abschnitten weiter. */
+.home-body header{background:color-mix(in srgb,var(--bg) 86%,transparent)}
+.home-body .pickup-section,.home-body #bewertungen,.home-body #bewertungen + section,.home-body footer{background:transparent!important;border-top:0!important}
+.home-body #bewertungen [style*="border:1px dashed"]{background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.home-body #bewertungen + section a[href^="tel"]{background:color-mix(in srgb,var(--bg) 78%,transparent)}
