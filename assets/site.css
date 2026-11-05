@@ -78,3 +78,32 @@ header nav a[aria-current]::after{content:"";position:absolute;left:0;right:0;bo
 body{padding-bottom:84px}
 }
 .sm-dock{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+
+/* Startseite: eigenständige Bildwelt für beide Farbmodi. */
+.hero{position:relative;isolation:isolate;min-height:max(650px,calc(100svh - 82px));box-sizing:border-box;overflow:hidden;background-color:#000;background-image:url("hero-dark.png");background-size:cover;background-position:center center;color:#fff}
+:root[data-theme="light"] .hero{background-color:#fff;background-image:url("hero-light.png");color:#000}
+.hero-content{position:relative;z-index:1;width:min(100%,780px);box-sizing:border-box;padding:clamp(32px,3vw,54px) clamp(24px,3.8vw,64px) 80px}
+.hero h1{margin:0;font-size:clamp(42px,4.3vw,76px);font-weight:850;line-height:.99;letter-spacing:-.045em}
+.hero h1 span{display:block}
+.hero .hero-accent{color:#ff6b00}
+.hero p{margin:22px 0 0;font-size:clamp(18px,1.6vw,26px);font-weight:550;line-height:1.35}
+.hero-actions{display:flex;flex-wrap:wrap;gap:16px 28px;margin-top:26px}
+.hero-actions a{display:inline-flex;min-height:56px;box-sizing:border-box;align-items:center;justify-content:center;padding:10px 25px;border:2px solid currentColor;border-radius:10px;font-size:clamp(16px,1.3vw,21px);font-weight:700;line-height:1.2;transition:transform .2s ease,background-color .2s ease,color .2s ease}
+.hero-actions a:hover{transform:translateY(-2px)}
+.hero-actions .hero-primary{border-color:#ff6b00;background:#ff6b00;color:#fff}
+.hero-actions .hero-primary:hover{background:#e65e00;border-color:#e65e00;color:#fff}
+.hero-actions .hero-secondary{background:color-mix(in srgb,var(--bg) 52%,transparent);color:inherit}
+.hero-actions .hero-secondary:hover{background:color-mix(in srgb,var(--bg) 80%,transparent);color:inherit}
+.pickup-section{display:flex;justify-content:center;padding:52px 24px 60px;background:var(--bg);border-top:1px solid var(--line)}
+.pickup-card{width:min(100%,440px)}
+@media (max-width:700px){
+.hero{min-height:660px;background-size:auto 65%;background-repeat:no-repeat;background-position:55% bottom}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(to bottom,var(--bg) 0%,var(--bg) 32%,color-mix(in srgb,var(--bg) 88%,transparent) 48%,transparent 69%)}
+.hero-content{padding:34px 22px 0}
+.hero h1{font-size:clamp(34px,9vw,52px);line-height:1.02}
+.hero p{font-size:18px;max-width:32ch}
+.hero-actions{gap:10px;margin-top:22px}
+.hero-actions a{min-height:46px;padding:9px 15px;font-size:15px;border-radius:8px}
+.pickup-section{padding:34px 20px 42px}
+}
+@media (max-width:380px){.hero{min-height:620px;background-size:auto 59%}.hero-actions a{font-size:14px;padding:8px 11px}}
